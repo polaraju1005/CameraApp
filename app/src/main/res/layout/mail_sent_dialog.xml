@@ -59,7 +59,7 @@
             android:layout_height="70dp"
             android:layout_below="@+id/txtEmail"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="24dp"
+            android:layout_marginBottom="23dp"
             android:background="@drawable/ful_round"
             android:contentDescription="button"
             android:elevation="2dp"
