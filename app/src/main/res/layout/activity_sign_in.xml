@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SignInActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="318dp"
+        android:layout_height="153dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="54dp"
+        android:src="@drawable/deloitte_logo" />
+
+    <TextView
+        android:id="@+id/textViewLetsGetStarted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/red_hat_display"
+        android:text="Let's get started"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewSignInWith"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewLetsGetStarted"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Sign-In with"
+        android:textColor="#058C11"
+        android:textSize="26sp" />
+
+    <!--    <RelativeLayout-->
+    <!--        android:id="@+id/relativeLayoutButton"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@id/textViewSignInWith"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_marginTop="60dp">-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/buttonSignIn"-->
+    <!--            android:layout_width="350dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:background="@drawable/rounded_button_background"-->
+    <!--            android:fontFamily="@font/poppins"-->
+    <!--            android:text="Microsoft Account"-->
+    <!--            android:textColor="#000000"-->
+    <!--            android:textSize="16sp" />-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/imageViewMicrosoftIcon"-->
+    <!--            android:layout_width="130dp"-->
+    <!--            android:layout_height="130dp"-->
+    <!--            android:layout_marginStart="55dp"-->
+    <!--            android:layout_marginLeft="70dp" />-->
+    <!--    </RelativeLayout>-->
+
+    <!-- Powered By ReNoteAI text -->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnSignIn"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/textViewSignInWith"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:elevation="5dp"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/microsoft_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text="Microsoft Account"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/poweredByLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnSignIn"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"> <!-- Added margin bottom -->
+
+        <TextView
+            android:id="@+id/poweredByText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Powered By "
+            android:textColor="#808080" />
+
+        <TextView
+            android:id="@+id/reNoteAiText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/poweredByText"
+            android:text="Re"
+            android:textColor="#00FF00"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/noteAiText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/reNoteAiText"
+            android:text="NoteAI"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>

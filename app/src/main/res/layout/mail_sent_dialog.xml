@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="321.21dp"
+    android:layout_height="265dp"
+    android:layout_gravity="center"
+    android:background="@android:color/transparent"
+    android:foreground="@android:color/transparent"
+    app:cardCornerRadius="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="0dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="180dp"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/deloitte_logo" />
+
+        <TextView
+            android:id="@+id/txtEmailSent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="center_horizontal"
+            android:text="Email Sent Successfully"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtEmailSent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center_horizontal"
+            android:text="abcd@deloitte.com"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/img_check"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/txtEmail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/ful_round"
+            android:contentDescription="button"
+            android:elevation="2dp"
+            android:padding="15dp"
+            android:src="@drawable/baseline_check_24" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
